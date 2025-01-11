@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display&display=swap');
+
+body {
+    font-family: 'Funnel Display', sans-serif;
+    background-color: #f4f4f9;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #ffffff;
+}
+
+a {
+    color: #3498db;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+header,
+footer {
+    background-color: #282c34;
+    color: #ffffff;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    margin: 0 0 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0 px;
+}
+
+nav a {
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+main {
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
