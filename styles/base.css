@@ -9,12 +9,7 @@ body {
     align-items: center;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
     color: #ffffff;
 }
 
@@ -60,7 +55,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 px;
+    margin: 0px;
 }
 
 nav a {
@@ -79,14 +74,68 @@ main {
     width: 100%;
     margin: 20px auto;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
 
 .card {
-    background-color: #ffffff;
+    background-color: white;
+    color: #333333;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+#about-me {
+    background-color: #f0f8ff;
+}
+
+#web-dev-resources {
+    background-color: #e0ffff;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card li {
+    margin-bottom: 10px;
+}
+
+.about-me-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me-content>div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.about-me-content img {
+    width: 200px;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.city-info {
+    text-align: center;
+}
+
+
+.city-info img {
+    width: 300px;
+    margin: 0 auto;
 }
