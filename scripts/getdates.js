@@ -1,8 +1,5 @@
 const currentYear = new Date().getFullYear();
-const currentYearElement = document.getElementById("currentyear");
-currentYearElement.textContent = currentYear;
-const lastModifiedDate = new Date(document.lastModified);
-const options = { year: 'numeric', month: 'long', day: 'numeric' };
-const formattedDate = lastModifiedDate.toLocaleDateString(undefined, options);
-const lastModifiedElement = document.getElementById("lastModified");
-lastModifiedElement.textContent = `Last Modified: ${formattedDate}`;
+document.querySelector('footer p:first-of-type').textContent = `Copyright © ${currentYear}`;
+
+const lastModified = document.lastModified;
+document.querySelector('footer p:nth-of-type(2)').textContent = `Last Modified: ${lastModified}`;
