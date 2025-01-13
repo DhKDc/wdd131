@@ -1,5 +1,11 @@
 const currentYear = new Date().getFullYear();
-document.querySelector('footer p:first-of-type').textContent = `Copyright © ${currentYear}`;
+
+const currentYearElement = document.getElementById("currentyear");
+
+currentYearElement.textContent = currentYear;
 
 const lastModified = document.lastModified;
-document.querySelector('footer p:nth-of-type(2)').textContent = `Last Modified: ${lastModified}`;
+
+const lastModifiedElement = document.getElementById("lastModified");
+
+lastModifiedElement.textContent = "Last Modified: " + lastModified;
