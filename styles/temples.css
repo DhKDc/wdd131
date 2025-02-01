@@ -42,7 +42,7 @@
     position: relative;
   }
   
-  nav div {
+  nav ul {
     list-style: none;
     gap: var(--grid-gap);
     display: flex;
