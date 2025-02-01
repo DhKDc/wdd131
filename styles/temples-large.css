@@ -5,15 +5,7 @@
 
     .menu {
         display: flex;
-        position: static;
-        flex-direction: row;
-        background-color: transparent;
-        width: auto;
-        padding: 0;
-    }
-
-    .menu li {
-        border-bottom: none;
-        padding: 0 1.5rem;
+        align-items: center;
+        justify-content: center;
     }
 }

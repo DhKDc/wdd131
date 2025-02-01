@@ -20,24 +20,19 @@ footer {
 }
 
 nav {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 10px;
+    position: relative;
 }
 
-nav ul {
-    display: flex;
+nav div {
     list-style: none;
-    padding: 0;
-    margin: 0;
-    width: auto;
-    justify-content: flex-start;
     gap: 20px;
-}
-
-nav ul li {
-    margin: 0px;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 nav a {
@@ -81,51 +76,53 @@ figcaption {
     margin-top: 10px;
 }
 
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 5px 0;
-}
-
 .menu {
     display: none;
-    top: 100%;
-    left: 0;
     width: 100%;
     background-color: #282c34;
-    padding: 1rem 0;
 }
 
 .menu.show {
     display: flex;
     flex-direction: column;
+    width: 100%;
+}
+
+
+.menu.show li {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.menu.show a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .menu li {
-    padding: 1rem;
     text-align: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .hamburger {
+    position: relative;
     display: block;
     cursor: pointer;
     padding: 10px;
-    position: relative;
 }
 
-.menu-icon, .close-icon {
-    font-size: 2rem;
-    color: white;
-    transition: opacity 0.3s ease;
-}
-
+.menu-icon,
 .close-icon {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: white;
+    transition: opacity 0.2s ease;
+}
+
+.close-icon {
     opacity: 0;
 }
 
