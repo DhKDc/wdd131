@@ -21,9 +21,9 @@ footer {
 
 nav {
     display: flex;
-    justify-content: center;
-    width: auto;
-    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
 nav ul {
@@ -52,19 +52,19 @@ nav a:hover {
     color: #ffffff;
 }
 
-main {
+main>h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
     padding: 20px;
 }
 
-main>h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-figure {
+.gallery figure {
     border: 1px solid #ccc;
     padding: 10px;
     margin: 0;
@@ -79,4 +79,72 @@ img {
 figcaption {
     text-align: center;
     margin-top: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #282c34;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.menu li {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.menu.show {
+    max-height: 500px;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 1001;
+}
+
+.menu-icon,
+.close-icon {
+    font-size: 24px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    color: white;
+}
+
+.close-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.hamburger.active.menu-icon {
+    opacity: 0;
+}
+
+.hamburger.active .close-icon {
+    opacity: 1;
 }

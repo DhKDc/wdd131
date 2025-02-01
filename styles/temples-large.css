@@ -1,5 +1,26 @@
 @media (min-width: 600px) {
-    main {
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    .hamburger {
+        display: none;
+    }
+
+    .menu {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        top: auto;
+        left: auto;
+        width: auto;
+        background-color: transparent;
+        box-shadow: none;
+        max-height: none;
+    }
+
+    .menu li {
+        border-bottom: none;
+        padding: 0 15px;
+    }
+
+    .menu a {
+        color: white;
     }
 }
