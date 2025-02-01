@@ -90,31 +90,22 @@ figcaption {
 
 .menu {
     display: none;
-    flex-direction: column;
-    position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     background-color: #282c34;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.menu li {
-    padding: 10px;
-    text-align: center;
-    border-bottom: 1px solid #eee;
-}
-
-.menu a {
-    text-decoration: none;
+    padding: 1rem 0;
 }
 
 .menu.show {
-    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu li {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .hamburger {
@@ -122,15 +113,12 @@ figcaption {
     cursor: pointer;
     padding: 10px;
     position: relative;
-    z-index: 1001;
 }
 
-.menu-icon,
-.close-icon {
-    font-size: 24px;
-    cursor: pointer;
-    transition: opacity 0.3s ease;
+.menu-icon, .close-icon {
+    font-size: 2rem;
     color: white;
+    transition: opacity 0.3s ease;
 }
 
 .close-icon {
@@ -141,7 +129,7 @@ figcaption {
     opacity: 0;
 }
 
-.hamburger.active.menu-icon {
+.hamburger.active .menu-icon {
     opacity: 0;
 }
 

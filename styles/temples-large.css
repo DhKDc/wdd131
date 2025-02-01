@@ -4,23 +4,16 @@
     }
 
     .menu {
-        display: flex !important;
-        flex-direction: row;
+        display: flex;
         position: static;
-        top: auto;
-        left: auto;
-        width: auto;
+        flex-direction: row;
         background-color: transparent;
-        box-shadow: none;
-        max-height: none;
+        width: auto;
+        padding: 0;
     }
 
     .menu li {
         border-bottom: none;
-        padding: 0 15px;
-    }
-
-    .menu a {
-        color: white;
+        padding: 0 1.5rem;
     }
 }
