@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #ADD8E6;
+    --secondary-color: #FFFFFF;
+    --accent-color: #A0522D;
+    --text-color: #333;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero {
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.data,
+.weather {
+    width: 80%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.data h2,
+.weather h2 {
+    color: var(--text-color);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (min-width: 1000px) {
+    .container {
+        flex-direction: column;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        min-height: 600px;
+    }
+
+    .hero {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .data,
+    .weather {
+        width: 25%;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        text-align: left;
+        position: absolute;
+    }
+
+    .weather img {
+        display: none;
+    }
+
+    .weather h2 {
+        position: relative;
+    }
+
+    .weather h2::after {
+        content: '⛅';
+        margin-left: 10px;
+        transform: translateY(-50%);
+        font-size: 20px;
+        color: var(--accent-color);
+    }
+
+    .data {
+        top: 20px;
+        left: 20px;
+    }
+
+    .weather {
+        bottom: 20px;
+        right: 20px;
+    }
+}
