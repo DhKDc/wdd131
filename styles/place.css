@@ -1,4 +1,5 @@
 :root {
+    --primary-font: 'Funnel Display', sans-serif;
     --primary-color: #ADD8E6;
     --secondary-color: #FFFFFF;
     --accent-color: #A0522D;
@@ -6,7 +7,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: var(--primary-font);
     margin: 0;
     padding: 0;
     background-color: var(--secondary-color);
