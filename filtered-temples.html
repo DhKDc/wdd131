@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples Gallery</title>
+    <meta name="description" content="Gallery of temple images">
+    <meta name="author" content="Daniel Toledo">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="(min-width: 600px)">
+</head>
+
+<body>
+    <header>
+        <h1>LDS Temples Album</h1>
+        <nav>
+            <div class="hamburger">
+                <span class="menu-icon">&#9776;</span>
+                <span class="close-icon">&#10006;</span>
+            </div>
+            <ul class="menu">
+                <li><a href="/filtered-temples.html">Home</a></li>
+                <li><a href="#" id="oldTemples">Old</a></li>
+                <li><a href="#" id="newTemples">New</a></li>
+                <li><a href="#" id="largeTemples">Large</a></li>
+                <li><a href="#" id="smallTemples">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div class="gallery">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Daniel Toledo, Chile</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/filtered-temples.js" defer></script>
+
+</body>
+
+</html>
