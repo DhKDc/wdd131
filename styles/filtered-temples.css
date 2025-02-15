@@ -88,7 +88,7 @@ main>h2 {
 }
 
 .gallery img {
-  max-width: auto;
+  max-width: 500px;
   height: auto;
   display: block;
   margin-bottom: 10px;
