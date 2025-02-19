@@ -1,0 +1,56 @@
+:root {
+    --primary-font: 'Funnel Display', sans-serif;
+    --background-color: #f0f8ff; /* AliceBlue */
+    --text-color: #2c3e50; /* Dark Slate Gray */
+    --header-footer-background: #ff69b4; /* HotPink */
+    --header-footer-text-color: #ffffff; /* White */
+    --link-color: #ff1493; /* DeepPink */
+    --link-hover-background: #ff4500; /* OrangeRed */
+    --border-color: #ffb6c1; /* LightPink */
+    --grid-gap: 20px;
+    --padding: 20px;
+    --transition-duration: 0.3s;
+    --font-size-large: 2rem;
+}
+  
+body {
+    margin: 0;
+    font-family: var(--primary-font);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+body li {
+    text-align: left;
+}
+
+#project-name p {
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--link-color);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    margin: 0 20px 20px 20px;
+}
+
+ 
+header,
+footer {
+    background-color: var(--header-footer-background);
+    color: var(--header-footer-text-color);
+    padding: var(--padding);
+    width: 100%;
+    height: auto;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding);
+}
