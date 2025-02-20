@@ -1,24 +1,46 @@
 :root {
     --primary-font: 'Funnel Display', sans-serif;
-    --background-color: #f0f8ff; /* AliceBlue */
-    --text-color: #2c3e50; /* Dark Slate Gray */
-    --header-footer-background: #ff69b4; /* HotPink */
-    --header-footer-text-color: #ffffff; /* White */
-    --link-color: #ff1493; /* DeepPink */
-    --link-hover-background: #ff4500; /* OrangeRed */
-    --border-color: #ffb6c1; /* LightPink */
+
+    /* Light Mode Colors */
+    --background-color: #f8f8ff;
+    --text-color: #333;
+    --header-footer-background: #e6e6fa;
+    --header-footer-text-color: #333;
+    --link-color: #007bff;
+    --link-hover-background: #0056b3;
+    --border-color: #ddd;
+
+    /* Dark Mode Colors */
+    --background-color-dark: #1e1e1e;
+    --text-color-dark: #eee;
+    --header-footer-background-dark: #282c34;
+    --header-footer-text-color-dark: #eee;
+    --link-color-dark: #61dafb;
+    --link-hover-background-dark: #40a0ff;
+    --border-color-dark: #333;
+
     --grid-gap: 20px;
     --padding: 20px;
     --transition-duration: 0.3s;
     --font-size-large: 2rem;
 }
-  
+
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     font-family: var(--primary-font);
     background-color: var(--background-color);
+    /* Default to light mode */
     color: var(--text-color);
     text-align: center;
+    transition: background-color var(--transition-duration), color var(--transition-duration);
+    /* Smooth transitions */
+}
+
+body.dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
 }
 
 body li {
@@ -29,28 +51,94 @@ body li {
     font-weight: bold;
     font-size: 2rem;
     color: var(--link-color);
+    /* Default to light mode link color */
+    transition: color var(--transition-duration);
 }
+
+body.dark-mode #project-name p {
+    color: var(--link-color-dark);
+}
+
 
 section {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     border: 1px solid var(--border-color);
+    /* Default border color */
     border-radius: 5px;
-    margin: 0 20px 20px 20px;
+    margin: 20px;
+    /* Simplified margin */
+    transition: border-color var(--transition-duration);
 }
 
- 
+body.dark-mode section {
+    border-color: var(--border-color-dark);
+}
+
+section p {
+    margin: 20px;
+    /* Simplified margin */
+}
+
 header,
 footer {
     background-color: var(--header-footer-background);
+    /* Default background */
     color: var(--header-footer-text-color);
+    /* Default text color */
     padding: var(--padding);
     width: 100%;
-    height: auto;
-    display: flex;
     height: 60px;
+    display: flex;
+    /* Use flexbox for centering */
     align-items: center;
     justify-content: center;
-    padding: var(--padding);
+    transition: background-color var(--transition-duration), color var(--transition-duration);
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: var(--header-footer-background-dark);
+    color: var(--header-footer-text-color-dark);
+}
+
+a {
+    /* Style all links */
+    color: var(--link-color);
+    transition: color var(--transition-duration), background-color var(--transition-duration);
+    /* Add transition for background */
+    text-decoration: none;
+    /* remove underline from links */
+}
+
+a:hover {
+    background-color: var(--link-hover-background);
+    /* Default hover background */
+
+}
+
+body.dark-mode a {
+    color: var(--link-color-dark);
+}
+
+body.dark-mode a:hover {
+    background-color: var(--link-hover-background-dark);
+}
+
+hr {
+    border-color: var(--border-color);
+    transition: border-color var(--transition-duration);
+}
+
+body.dark-mode hr {
+    border-color: var(--border-color-dark);
+}
+
+body,
+header,
+footer,
+section,
+#project-name p,
+a,
+hr {
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
