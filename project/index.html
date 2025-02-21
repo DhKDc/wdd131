@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="description" content="ExpoAnime Rancagua webpage with information about their events and more">
+    <meta name="author" content="Daniel Toledo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpoAnime Rancagua</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css" media="(min-width: 600px)">
+
+</head>
+
+<body>
+    <header>
+        <h1>ExpoAnime Rancagua</h1>
+        <nav>
+            <div class="hamburger">
+                <span class="menu-icon">&#9776;</span>
+                <span class="close-icon">&#10006;</span>
+            </div>
+            <ul class="menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/news.html">Latest News</a></li>
+                <li><a href="/form.html">Subscribe</a></li>
+            </ul>
+            <div id="theme-switcher">
+                <span class="dark-mode">🌙</span>
+                <span class="light-mode">☀️</span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="gallery-container">
+            <h2>Last Event Gallery</h2>
+            <section class="gallery">
+                <img src="images/expoanime-rancagua-1.jpg" alt="ExpoAnime Rancagua 1">
+                <img src="images/expoanime-rancagua-2.jpg" alt="ExpoAnime Rancagua 2">
+                <img src="images/expoanime-rancagua-3.jpg" alt="ExpoAnime Rancagua 3">
+                <img src="images/expoanime-rancagua-4.jpg" alt="ExpoAnime Rancagua 4">
+                <img src="images/expoanime-rancagua-5.jpg" alt="ExpoAnime Rancagua 5">
+                <img src="images/expoanime-rancagua-6.jpg" alt="ExpoAnime Rancagua 6">
+                <img src="images/expoanime-rancagua-7.jpg" alt="ExpoAnime Rancagua 7">
+                <img src="images/expoanime-rancagua-8.jpg" alt="ExpoAnime Rancagua 8">
+                <img src="images/expoanime-rancagua-9.jpg" alt="ExpoAnime Rancagua 9">
+                <img src="images/expoanime-rancagua-10.jpg" alt="ExpoAnime Rancagua 10">
+                <img src="images/expoanime-rancagua-11.jpg" alt="ExpoAnime Rancagua 11">
+                <img src="images/expoanime-rancagua-12.jpg" alt="ExpoAnime Rancagua 12">
+                <img src="images/expoanime-rancagua-13.jpg" alt="ExpoAnime Rancagua 13">
+
+            </section>
+        </div>
+        <div class="container">
+            <section class="nextEvent">
+                <h2>Next Event</h2>
+                <p>ExpoAnime Back to School!</p>
+                <p>March 7th and 8th</p>
+                <p>Universidad de O'higgins</p>
+            </section>
+            <section class="eventsCalendar">
+                <h2>Events Calendar</h2>
+                <section class="event">
+                    <h3>ExpoAnime Torneo regional de SSB</h3>
+                    <p>May 16th and 17th</p>
+                    <p>Location: TBA</p>
+                </section>
+                <section class="event">
+                    <h3>Fonda ExpoAnime</h3>
+                    <p>September 20th and 21th</p>
+                    <p>Location: Parque Comunal, Rancagua, Chile</p>
+                </section>
+                <section class="event">
+                    <h3>ExpoAnime Rancagua para navidad</h3>
+                    <p>November 29th and 30th</p>
+                    <p>Location: Plaza Rodeo,Rancagua, Chile</p>
+                </section>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Daniel Toledo, Chile</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/project.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</body>
+
+</html>

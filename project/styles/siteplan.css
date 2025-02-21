@@ -1,7 +1,6 @@
 :root {
     --primary-font: 'Open Sans';
 
-
     --header-footer-text-color: #212121;
     --background-color: #ffffff;
     --text-color: #37474f;
@@ -9,7 +8,6 @@
     --link-color: #d32f2f;
     --link-hover-background-color: #b71c1c;
     --border-color: #e0e0e0;
-
 
     --header-footer-text-color-dark: #e0e0e0;
     --background-color-dark: #121212;
@@ -45,7 +43,6 @@ section {
     flex-direction: column;
     align-items: center;
 }
-
 
 section p {
     margin: 20px;

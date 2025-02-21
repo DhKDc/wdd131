@@ -1,4 +1,4 @@
-const darkModeToggle = document.getElementById('dark-mode-toggle'); 
+const darkModeToggle = document.getElementById('theme-switcher');
 const body = document.body;
 
 darkModeToggle.addEventListener('click', () => {

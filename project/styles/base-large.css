@@ -1,0 +1,48 @@
+@media (min-width: 600px) {
+    .hamburger {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    .menu {
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        list-style: none;
+        font-weight: bold;
+    }
+
+    .menu li {
+        margin: 0 1rem;
+    }
+
+    
+    h1 {
+        margin: 0;
+        padding: 1rem;
+    }
+
+    main {
+        background-image: url('../images/page-background.webp');
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow: hidden;;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 20px;
+    }
+
+    .nextEvent, .eventsCalendar {
+        width: 25em;
+        height: auto;
+    }
+}
