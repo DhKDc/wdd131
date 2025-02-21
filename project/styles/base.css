@@ -40,17 +40,12 @@ body.dark-mode#theme-switcher:hover {
 
 
 
-body.dark-mode main.nextEvent,
-body.dark-mode main.eventsCalendar {
+body.dark-mode .nextEvent,
+body.dark-mode .eventsCalendar,
+body.dark-mode . gallery-container H2 {
   background-color: var(--header-footer-background-dark);
   color: var(--header-footer-text-color-dark);
   border-color: var(--border-color-dark);
-}
-
-body.dark-mode.gallery-container h2 {
-    background-color: var(--header-footer-background-dark);
-    color: var(--header-footer-text-color-dark);
-    border-color: var(--border-color-dark);
 }
 
 
