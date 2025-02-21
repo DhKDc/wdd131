@@ -1,0 +1,19 @@
+:root {
+    --primary-font: 'Funnel Display', sans-serif;
+
+    --background-color: #f8f8ff;
+    --text-color: #333;
+    --header-footer-background: #e6e6fa;
+    --header-footer-text-color: #333;
+    --link-color: #007bff;
+    --link-hover-background: #0056b3;
+    --border-color: #ddd;
+
+    --background-color-dark: #1e1e1e;
+    --text-color-dark: #eee;
+    --header-footer-background-dark: #282c34;
+    --header-footer-text-color-dark: #eee;
+    --link-color-dark: #61dafb;
+    --link-hover-background-dark: #40a0ff;
+    --border-color-dark: #333;
+}

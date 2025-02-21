@@ -1,23 +1,19 @@
 :root {
-    --primary-font: 'Funnel Display', sans-serif;
+    --primary-font: 'Open Sans';
 
-    /* Light Mode Colors */
     --background-color: #f8f8ff;
-    --text-color: #333;
+    --text-color: #333333;
     --header-footer-background: #e6e6fa;
-    --header-footer-text-color: #333;
     --link-color: #007bff;
-    --link-hover-background: #0056b3;
+    --link-hover-background-color: #0056b3;
     --border-color: #ddd;
 
-    /* Dark Mode Colors */
-    --background-color-dark: #1e1e1e;
-    --text-color-dark: #eee;
+    --background-color-dark: #121212;
+    --text-color-dark: #eeeeee;
     --header-footer-background-dark: #282c34;
-    --header-footer-text-color-dark: #eee;
     --link-color-dark: #61dafb;
-    --link-hover-background-dark: #40a0ff;
-    --border-color-dark: #333;
+    --link-hover-background-color-dark: #40a0ff;
+    --border-color-dark: #333333;
 
     --grid-gap: 20px;
     --padding: 20px;
@@ -31,114 +27,79 @@ body {
     margin: 0;
     font-family: var(--primary-font);
     background-color: var(--background-color);
-    /* Default to light mode */
     color: var(--text-color);
     text-align: center;
     transition: background-color var(--transition-duration), color var(--transition-duration);
-    /* Smooth transitions */
 }
 
-body.dark-mode {
-    background-color: var(--background-color-dark);
-    color: var(--text-color-dark);
+section {
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    margin: 20px;
+    transition: border-color var(--transition-duration);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-body li {
-    text-align: left;
+
+section p {
+    margin: 20px;
 }
 
 #project-name p {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: var(--font-size-large);
     color: var(--link-color);
-    /* Default to light mode link color */
     transition: color var(--transition-duration);
 }
 
-body.dark-mode #project-name p {
-    color: var(--link-color-dark);
+#color-modes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-
-section {
-    align-items: center;
-    border: 1px solid var(--border-color);
-    /* Default border color */
-    border-radius: 5px;
-    margin: 20px;
-    /* Simplified margin */
-    transition: border-color var(--transition-duration);
+ul {
+    text-align: left;
 }
 
-body.dark-mode section {
+#light-mode,
+#dark-mode {
+    padding: var(--padding);
+}
+
+#dark-mode {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
     border-color: var(--border-color-dark);
+
 }
 
-section p {
-    margin: 20px;
-    /* Simplified margin */
+header {
+    color: var(--link-color);
 }
 
 header,
 footer {
-    background-color: var(--header-footer-background);
-    /* Default background */
-    color: var(--header-footer-text-color);
-    /* Default text color */
-    padding: var(--padding);
-    width: 100%;
-    height: 60px;
     display: flex;
-    /* Use flexbox for centering */
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    background-color: var(--header-footer-background);
+    padding: var(--padding);
+    height: 60px;
     transition: background-color var(--transition-duration), color var(--transition-duration);
 }
 
-body.dark-mode header,
-body.dark-mode footer {
-    background-color: var(--header-footer-background-dark);
-    color: var(--header-footer-text-color-dark);
+footer p {
+    padding: 20px;
 }
 
 a {
-    /* Style all links */
     color: var(--link-color);
-    transition: color var(--transition-duration), background-color var(--transition-duration);
-    /* Add transition for background */
     text-decoration: none;
-    /* remove underline from links */
+    transition: color var(--transition-duration), background-color var(--transition-duration);
 }
 
 a:hover {
-    background-color: var(--link-hover-background);
-    /* Default hover background */
-
-}
-
-body.dark-mode a {
-    color: var(--link-color-dark);
-}
-
-body.dark-mode a:hover {
-    background-color: var(--link-hover-background-dark);
-}
-
-hr {
-    border-color: var(--border-color);
-    transition: border-color var(--transition-duration);
-}
-
-body.dark-mode hr {
-    border-color: var(--border-color-dark);
-}
-
-body,
-header,
-footer,
-section,
-#project-name p,
-a,
-hr {
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    background-color: var(--link-hover-background-color);
 }
